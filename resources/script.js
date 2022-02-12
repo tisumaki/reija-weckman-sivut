@@ -1,11 +1,13 @@
-const moreBtn = document.querySelector(".read-more-btn");
-const text = document.querySelector(".text");
+window.onscroll = function() {stickyNav()};
 
-moreBtn.addEventListener('click', (_e)=>{
-        text.classList.toggle("show-more");
-        if(moreBtn.innerHTML === 'Read more') {
-            moreBtn.innerHTML = 'Read less';
-        } else {
-            moreBtn.innerHTML = 'Read more';
-        }
-    })
+var navbar = document.querySelector('.nav-container');
+
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

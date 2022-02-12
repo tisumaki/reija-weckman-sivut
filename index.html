@@ -9,7 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     </head>
 
     <body onload="document.body.style.opacity='1'">
@@ -73,18 +74,17 @@
             <section id="services">
                 <div class="services-container">
                     <h2>Services</h2>
-                    <p class="text">Olen aivan vitun hyvä bla bla bla...
+                        Olen aivan vitun hyvä bla bla bla...
                         <br><br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet nisl ut nisi pharetra, sed ullamcorper nisl volutpat. Nam pretium lacus nec augue consectetur, vitae dapibus tellus finibus. Maecenas volutpat pellentesque tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ut maximus erat. Proin in risus laoreet, interdum lectus a, ultricies quam. Donec non placerat dolor, id aliquam magna. Cras metus ligula, ultricies et commodo vel, hendrerit ut nisl. Fusce sollicitudin blandit turpis et cursus. Mauris congue leo a arcu vestibulum porta. Praesent rhoncus vestibulum posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        <span class="more-text"><br><br>
+                        <span class="more"><br><br>
                         Sed tincidunt fermentum justo a pulvinar. Nunc posuere fringilla arcu, nec elementum lorem elementum ac. Praesent at placerat tortor. Duis convallis semper nibh, vitae hendrerit turpis accumsan vitae. Sed posuere, ante nec maximus ullamcorper, ante diam interdum nisl, vel cursus dolor erat ac lorem. Vestibulum faucibus blandit placerat. Donec pulvinar erat eget interdum rhoncus. Etiam nec ultricies ligula. Quisque non nulla faucibus, rhoncus enim eget, feugiat eros. Ut non nisl a mi tempor rutrum. Nulla facilisi.
                         <br><br>
                         Duis ultrices mattis eros nec auctor. Vestibulum tempor lectus ac purus bibendum, vel varius enim consectetur. Ut ut tellus venenatis, gravida nisl ut, consectetur tortor. Nam dapibus nisl ac nibh congue tristique. Phasellus eleifend nibh sit amet ante malesuada finibus. Nunc viverra nec diam ac convallis. Cras augue massa, gravida sed hendrerit non, elementum id justo. Donec sit amet dignissim elit.
-                    </span></p>
+                    </span>
 
-                    <button class="read-more-btn">Read more</button>
+                    <button class="read">Read more</button>
 
-                    <script src="./resources/script.js"></script>
                 </div>
             </section>
 
@@ -110,16 +110,16 @@
             <section id="finn-facts">
                 <div class="facts-container">
                     <h2>Finn Facts</h2>
-                    <p class="text">Suomi on sellainen ja tällainen bla bla bla...
+                        Suomi on sellainen ja tällainen bla bla bla...
                         <br><br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere congue nulla at euismod. Vestibulum commodo placerat orci. Pellentesque luctus at enim ut rutrum. Sed laoreet, est ut accumsan auctor, lorem enim luctus mi, eget tincidunt lectus ante ut mauris. Curabitur convallis lorem vel elit ultrices, sit amet efficitur lacus suscipit. Ut in leo porttitor, eleifend urna vitae, iaculis purus. Integer condimentum aliquet erat, eu malesuada nulla feugiat vel. Suspendisse cursus sapien a enim fringilla ornare. Morbi eget egestas dui. Sed at risus in massa consectetur tristique a sit amet elit. Aliquam in lectus pretium lacus condimentum fringilla. Nullam interdum, sem vel lacinia pulvinar, metus arcu ultricies tortor, ut tincidunt orci quam ac quam. Mauris venenatis bibendum elementum. In facilisis massa at tellus efficitur, ac tincidunt nunc condimentum. Proin pellentesque nibh id malesuada maximus.
-                        <span class="more-text"><br><br>
+                        <span class="more"><br><br>
                         Curabitur tincidunt et nisi sed imperdiet. Duis varius arcu vel ante aliquet mattis at quis quam. Vestibulum id ipsum sapien. Sed iaculis ullamcorper dictum. Duis magna dolor, molestie ac dapibus quis, efficitur sed tellus. Pellentesque molestie urna velit, et rutrum risus lobortis eget. Phasellus porttitor ullamcorper aliquet.
                         <br><br>
                         Nunc eu metus ac neque volutpat lacinia. Maecenas pretium blandit euismod. Nam nisl eros, gravida ut pellentesque quis, tempus sed ante. Donec tincidunt vel erat mollis luctus. Etiam in nisi non est mollis volutpat. Vivamus at est elit. Cras ex neque, tincidunt eget pulvinar eget, sagittis sit amet risus. Aenean non facilisis lorem. Mauris porta non ante a cursus.
-                    </span></p>
+                    </span>
 
-                    <button class="read-more-btn">Read more</button>
+                    <button class="read">Read more</button>
                 </div>
             </section>
 
@@ -140,5 +140,20 @@
             <a href=#>Terms of Service</a>
         </footer>
         
+        <script src="./resources/script.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $(".read").click(function() {
+                    $(this).prev().toggle();
+                    if($(this).text()=='Read more'){
+                        $(this).text('Read less');
+                    } else {
+                        $(this).text('Read more');
+                    }
+                })
+            });
+        </script>
+
     </body>
 </html>
