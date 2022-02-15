@@ -52,19 +52,19 @@
                     
                     <div class="intro-icons">
                         <div class="icon-box">
-                            <span class="material-icons" style="font-size:75px">edit</span>
+                            <span class="material-icons">edit</span>
                             <h3>Translation</h3>
                         </div>
                         <div class="icon-box">
-                            <span class="material-icons" style="font-size:75px">auto_stories</span>
+                            <span class="material-icons">auto_stories</span>
                             <h3>Proofreading</h3>
                         </div>
                         <div class="icon-box">
-                            <span class="material-icons" style="font-size:75px">psychology</span>
+                            <span class="material-icons">psychology</span>
                             <h3>AI Training</h3>
                         </div>
                         <div class="icon-box">
-                            <span class="material-icons" style="font-size:75px">sms</span>
+                            <span class="material-icons">sms</span>
                             <h3>Consulting</h3>
                         </div>
                     </div>
@@ -135,8 +135,8 @@
         </main>
 
         <footer>
-            <a href=#><img src="./resources/images/linkedin_black_logo_icon_147114.svg"></a>
-            <a href="https://www.proz.com"><img border="0" src="https://cfcdn.proz.com/images/affiliates/proz_translation_workplace.gif" alt="Translators and translation resources">
+            <a href=#><img id="linked-in-img" src="./resources/images/linkedin_black_logo_icon_147114.svg"></a>
+            <a href="https://www.proz.com"><img id="proz-img" border="0" src="https://cfcdn.proz.com/images/affiliates/proz_translation_workplace.gif" alt="Translators and translation resources">
             <a href=#>Terms of Service</a>
         </footer>
         
@@ -145,7 +145,7 @@
         <script>
             $(document).ready(function() {
                 $(".read").click(function() {
-                    $(this).prev().toggle();
+                    $(this).siblings(".more").toggle();
                     if($(this).text()=='Read more'){
                         $(this).text('Read less');
                     } else {

@@ -31,7 +31,9 @@ h2 {
 }
 
 .services-container, .facts-container {
-    padding: 3.5em 2.5em;
+    text-align: center;
+    padding: 4.5em 2em;
+    margin-bottom: 5em;
     line-height: 1.75;
 }
 
@@ -113,7 +115,6 @@ nav a {
 .wrapper {
     width: 100%;
     position: relative;
-    margin: 0 1em;
 }
 
 .banner-logo {
@@ -158,6 +159,10 @@ nav a {
     margin-top: 2em;
 }
 
+.material-icons {
+    font-size: 4em !important;
+}
+
 .intro-container h2 {
     padding: 1.5em;
     text-transform: none;
@@ -185,11 +190,6 @@ nav a {
     padding: 1em;
 }
 
-.services-container, .facts-container {
-    text-align: center;
-    padding: 4.5em 2em;
-    margin-bottom: 5em;
-}
 
 .services-container h2, .facts-container h2 {
     font-size: 2.5em;
@@ -240,3 +240,131 @@ footer {
     justify-content: space-evenly;
 }
 
+@media only screen and (max-device-width: 768px) {
+    .banner-logo {
+        width: 8em;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5em;
+    }
+
+    .banner-text h2 {
+        font-size: 1.5em;
+    }
+
+    .brand-image {
+        height: 25em;
+    }
+
+    .intro-container h2 {
+        padding: 1em 1.5em;
+    }
+
+    .services-container, .facts-container {
+        padding: 0 2em 4.5em 2em;
+    }
+}
+
+@media only screen and (max-device-width: 425px) {
+    .banner-logo {
+        width: 6em;
+    }
+
+    .banner-text h1 {
+        font-size: 1.5em;
+        text-shadow: 1px 1px grey;
+    }
+
+    .banner-text h2 {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        font-size: 0.75em;
+        padding: 0.5em;
+    }
+
+    .nav-logo {
+        width: 5em;
+    }
+
+    .brand-image {
+        height: 28em;
+        margin-bottom: 1.5em;
+    }
+
+    .intro-container {
+        padding: 1em;
+        margin-top: 0;
+    }
+
+    .services-container, .facts-container {
+        margin-bottom: 1.5em;
+    }
+
+    .material-icons {
+        font-size: 4em !important;
+    }
+
+    .services-container h2, .facts-container h2 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 0.75em 1em;
+    }
+
+    .bubble-box span {
+        font-size: 2em;
+        height: 2.75em;
+        width: 2.75em;
+    }
+
+    #linked-in-img {
+        width: 3em;
+    }
+
+    #proz-img {
+        width: 8em;
+    }
+}
+
+@media only screen and (max-device-width: 375px) {
+    .nav-links {
+        font-size: 0.65em;
+    }
+
+    .bubble-container {
+        padding: 2.5em 0;
+    }
+
+}
+
+@media only screen and (max-device-width: 320px) {
+    .nav-links {
+        font-size: 0.5em;
+    }
+
+    .banner-logo {
+        width: 5em;
+    }
+
+    .bubble-box span {
+        font-size: 1.8em;
+        height: 2.25em;
+        width: 2.25em;
+    }
+
+    .bubble-box h3 {
+        font-size: 1em;
+    }
+
+    #linked-in-img {
+        width: 2.5em;
+    }
+
+    #proz-img {
+        width: 7.5em;
+    }
+}
