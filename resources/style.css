@@ -286,7 +286,7 @@ footer {
     }
 
     .nav-logo {
-        width: 5em;
+        width: 3.5em;
     }
 
     .brand-image {
@@ -397,7 +397,11 @@ footer {
     }
 }
 
-@media only screen and (max-device-width: 270px) {
+@media only screen and (max-device-width: 230px) {
+
+    .nav-links {
+        font-size: 0.2em;
+    }
 
     .banner-text h1 {
         font-size: 1em;
