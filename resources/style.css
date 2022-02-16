@@ -393,6 +393,17 @@ footer {
 
 @media only screen and (max-device-width: 250px) {
     .nav-links {
-        font-size: 0.35em;
+        font-size: 0.25em;
+    }
+}
+
+@media only screen and (max-device-width: 270px) {
+
+    .banner-text h1 {
+        font-size: 1em;
+    }
+
+    .banner-text h2 {
+        font-size: 0.5em;
     }
 }
