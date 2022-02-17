@@ -1,14 +1,11 @@
-window.onscroll = function() {stickyNav()};
+$("document").ready(function($){
+  var nav = $('.nav-container-fixed');
 
-var navbar = document.querySelector('.nav-container');
-
-var sticky = navbar.offsetTop;
-
-function stickyNav() {
-  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
-    navbar.classList.add("sticky");
-    
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+  $(window).scroll(function () {
+      if ($(this).scrollTop() >= 550) {
+          nav.addClass("sticky");
+      } else {
+          nav.removeClass("sticky");
+      }
+  });
+});
