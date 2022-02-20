@@ -43,7 +43,7 @@ h2 {
     display: none;
 }
 
-button, #submit-btn {
+button {
     float: right;
     background-color: #daa520;
     color: white;
