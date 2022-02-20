@@ -43,7 +43,7 @@ h2 {
     display: none;
 }
 
-button {
+button, #submit-btn {
     float: right;
     background-color: #daa520;
     color: white;
@@ -235,6 +235,55 @@ nav a {
     color: #5f9ea0;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    text-transform: uppercase;
+}
+
+fieldset{
+    border: none;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+p {
+    padding: 0.5em;
+}
+
+label {
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 15em;
+    vertical-align: top;
+    text-decoration: underline #daa520;
+    text-underline-offset: 4px;
+}
+
+input, textarea {
+    margin: 0 4em;
+    padding: 0.5em 10em 0.5em 0.5em;
+    border: 2px solid #291405;
+}
+
+input:focus, textarea:focus {
+    outline: transparent;
+    border: 2px solid #daa520;
+}
+
+textarea {
+    font-family: inherit;
+    width: 40em;
+    height: 12em;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+
 footer {
     margin: 5em 0 auto;
     display: flex;
@@ -269,6 +318,15 @@ footer {
 
     .services-container, .facts-container {
         padding: 0 2em 4.5em 2em;
+    }
+
+    input, textarea {
+        padding: 0.5em 5em 0.5em 0.5em;
+    }
+
+    textarea {
+        width: 20em;
+        height: 10em;
     }
 }
 
@@ -327,6 +385,19 @@ footer {
         width: 2.75em;
     }
 
+    form {
+        text-align: center;
+    }
+
+    label {
+        margin: 1em auto;
+        width: auto;
+    }
+
+    #submit-btn {
+        float: none;
+    }
+
     #linked-in-img {
         width: 3em;
     }
@@ -347,6 +418,14 @@ footer {
 
     .nav-container-fixed {
         height: 3rem;
+    }
+
+    input, textarea {
+        padding: 0.5em 2em 0.5em 0.5em;
+    }
+
+    textarea {
+        width: fit-content;
     }
 
 }
