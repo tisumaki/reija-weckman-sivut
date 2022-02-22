@@ -9,3 +9,14 @@ $("document").ready(function($){
       }
   });
 });
+
+$(document).ready(function() {
+    $(".read").click(function() {
+        $(this).siblings(".more").toggle();
+        if($(this).text()=='Read more'){
+            $(this).text('Read less');
+        } else {
+            $(this).text('Read more');
+        }
+    })
+});
