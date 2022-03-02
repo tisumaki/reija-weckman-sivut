@@ -148,10 +148,16 @@ nav a {
 
 .brand-image {
     margin-bottom: 4.5em;
-    height: 20em;
+    height: 26em;
     width: 100%;
     object-fit: cover;
-    opacity: 0.75;
+}
+
+.square {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro-container, .bubble-container {
