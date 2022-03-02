@@ -148,9 +148,10 @@ nav a {
 
 .brand-image {
     margin-bottom: 4.5em;
-    height: 26em;
+    height: 28em;
     width: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .square {
