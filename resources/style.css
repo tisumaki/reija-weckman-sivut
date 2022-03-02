@@ -154,10 +154,11 @@ nav a {
 }
 
 .square {
-    width: 50%;
+    width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    object-position: 0 10%;
 }
 
 .intro-container, .bubble-container {
@@ -327,6 +328,10 @@ textarea:focus::placeholder {
     .brand-image {
         height: 25em;
         object-position: 65%;
+    }
+
+    .square {
+        width: 65%;
     }
 
     .intro-container h2 {
