@@ -416,6 +416,14 @@ textarea:focus::placeholder {
         font-size: 2em;
     }
 
+    ul {
+        padding: 0 1em;
+    }
+
+    li {
+        padding-left: 2em;
+    }
+
     button {
         padding: 0.75em 1em;
     }
