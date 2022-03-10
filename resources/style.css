@@ -400,6 +400,10 @@ textarea:focus::placeholder {
         margin-top: 0;
     }
 
+    .intro-container h2 {
+        font-size: 2em;
+    }
+
     .services-container, .facts-container {
         margin-bottom: 1.5em;
     }
