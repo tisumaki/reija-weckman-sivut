@@ -34,7 +34,7 @@ h2 {
 
 .services-container, .facts-container {
     text-align: center;
-    padding: 4.5em 2em;
+    padding: 0 2em 3.5em 2em;
     margin-bottom: 5em;
     line-height: 1.75;
 }
@@ -98,8 +98,10 @@ nav a {
 }
 
 .nav-logo {
-    width: 6.5em;
+    width: 5.5em;
     padding: 1em;
+    font-family: 'Bad Script', cursive;
+    color: white;
 }
 
 .sticky {
@@ -108,42 +110,34 @@ nav a {
 }
 
 .banner-container {
-    height: auto;
     border-top: 3px double white;
     background-color: #291405;
     width: 100%;
-    position: relative;
     padding: 1em 0;
-}
-
-.wrapper {
-    width: 100%;
-}
-
-.banner-logo {
     display: flex;
-    width: 10em;
-    padding: 1em;
+    justify-content: space-around;
 }
 
 .banner-text {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 47%;
-    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner-text h1 {
+    font-family: 'Bad Script', cursive;
     color: white;
     font-size: 3.5em;
+    font-weight: 600;
     text-shadow: 2px 2px grey;
 }
 
 .banner-text h2 {
     color: white;
     font-weight: lighter;
-    text-transform: capitalize;
+    text-transform: none;
+    font-size: 1.3em;
+    padding: 0 0 0.25em 0;
 }
 
 .brand-image {
@@ -162,12 +156,12 @@ nav a {
     object-position: 0 10%;
 }
 
-.intro-container, .bubble-container {
-    text-align: center;
+#first-pic {
+    margin-bottom: 5%;
 }
 
-.intro-container {
-    margin-top: 2em;
+.intro-container, .bubble-container {
+    text-align: center;
 }
 
 .material-icons {
@@ -177,14 +171,25 @@ nav a {
 .intro-container h2 {
     padding: 1.5em;
     text-transform: none;
+    font-size: 2.5em;
 }
 
 .services-container h2, .facts-container h2 {
     padding: 1em;
 }
 
+ul {
+    padding: 0 5.5em;
+    list-style-type: disclosure-closed;
+  }
+
+li {
+    padding-left: 3em;
+    text-align: left;
+}
+
 .intro-icons, .bubble-container {
-    padding-top: 2.5em;
+    padding: 2.5em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -206,7 +211,9 @@ nav a {
     font-size: 2.5em;
 }
 
-
+#info-bubbles {
+    display: none;
+}
 
 .bubble-box span {
     color: white;
@@ -238,16 +245,18 @@ nav a {
 
 .contact-container h3 {
     font-size: 1.3em;
+    line-height: 1.75;
 }
 
-.contact-container a {
+.contact-container a, .services-container a {
     color: #5f9ea0;
+    text-decoration: none;
 }
 
 form {
     display: flex;
     justify-content: center;
-    padding: 2em 0;
+    padding: 0.75em 0 2em 0;
     text-transform: uppercase;
 }
 
@@ -313,6 +322,10 @@ textarea:focus::placeholder {
     section {
         background-color: #ffffeb;
     }
+
+    .nav-logo {
+        width: 4.5em;
+    }
     
     .banner-logo {
         width: 8em;
@@ -374,6 +387,7 @@ textarea:focus::placeholder {
 
     .nav-logo {
         width: 3.5em;
+        margin-right: 0.75em;
     }
 
     .brand-image {
@@ -441,6 +455,10 @@ textarea:focus::placeholder {
 
     .nav-container-fixed {
         height: 3rem;
+    }
+
+    form {
+        padding: 0 0 2em 0;
     }
 
     input, textarea {
