@@ -70,6 +70,7 @@ nav a:hover {
     justify-content: space-between;
     position: relative;
     top: 0;
+    display: none;
 }
 
 
@@ -110,7 +111,6 @@ nav a {
 }
 
 .banner-container {
-    border-top: 3px double white;
     background-color: #291405;
     width: 100%;
     padding: 1em 0;
@@ -127,17 +127,24 @@ nav a {
 .banner-text h1 {
     font-family: 'Bad Script', cursive;
     color: white;
-    font-size: 3.5em;
+    font-size: 4.5em;
     font-weight: 600;
     text-shadow: 2px 2px grey;
+    margin-right: 2em;
+}
+
+.banner-text h1::first-letter {
+    font-size: 150%;
 }
 
 .banner-text h2 {
     color: white;
     font-weight: lighter;
     text-transform: none;
-    font-size: 1.3em;
-    padding: 0 0 0.25em 0;
+    font-size: 1.2em;
+    padding: 0 0 1em 0;
+    margin-left: 20em;
+    font-style: oblique;
 }
 
 .brand-image {
@@ -172,6 +179,7 @@ nav a {
     padding: 1.5em;
     text-transform: none;
     font-size: 2.5em;
+    font-weight: normal;
 }
 
 .services-container h2, .facts-container h2 {
@@ -180,12 +188,24 @@ nav a {
 
 ul {
     padding: 0 5.5em;
-    list-style-type: disclosure-closed;
+    list-style: none;
   }
 
 li {
     padding-left: 3em;
     text-align: left;
+}
+
+li::before {
+    content: "\2023";
+    font-size: 3em;
+    color: #5f9ea0;
+    display: inline-block;
+    width: 1.5em;
+    height: 1em;
+    margin-left: -1.5em;
+    position: relative;
+    top: 0.25em;
 }
 
 .intro-icons, .bubble-container {
@@ -246,6 +266,7 @@ li {
 .contact-container h3 {
     font-size: 1.3em;
     line-height: 1.75;
+    font-weight: normal;
 }
 
 .contact-container a, .services-container a {
@@ -323,6 +344,10 @@ textarea:focus::placeholder {
         background-color: #ffffeb;
     }
 
+    button {
+        font-size: 0.8em;
+    }
+
     .nav-logo {
         width: 4.5em;
     }
@@ -332,11 +357,12 @@ textarea:focus::placeholder {
     }
 
     .banner-text h1 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .banner-text h2 {
-        font-size: 1.5em;
+        font-size: 1em;
+        margin-left: 15em;
     }
 
     .brand-image {
@@ -350,6 +376,7 @@ textarea:focus::placeholder {
 
     .intro-container h2 {
         padding: 1em 1.5em;
+        font-size: 2em;
     }
 
     .services-container, .facts-container {
@@ -372,12 +399,14 @@ textarea:focus::placeholder {
     }
 
     .banner-text h1 {
-        font-size: 1.5em;
+        font-size: 2em;
         text-shadow: 1px 1px grey;
+        margin-right: 3em;
     }
 
     .banner-text h2 {
-        font-size: 1em;
+        font-size: 0.8em;
+        margin-left: 10em;
     }
 
     .nav-links {
@@ -401,7 +430,7 @@ textarea:focus::placeholder {
     }
 
     .intro-container h2 {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 
     .services-container, .facts-container {
@@ -416,6 +445,10 @@ textarea:focus::placeholder {
         font-size: 2em;
     }
 
+    .services-container h2 {
+        padding: 0 0 1em 0;
+    }
+
     ul {
         padding: 0 1em;
     }
@@ -424,8 +457,13 @@ textarea:focus::placeholder {
         padding-left: 2em;
     }
 
+    li::before {
+        width: 1em;
+        margin-left: -1em;
+    }
+
     button {
-        padding: 0.75em 1em;
+        padding: 0.85em 1em;
     }
 
     .bubble-box span {
@@ -471,10 +509,6 @@ textarea:focus::placeholder {
 
     form {
         padding: 0 0 2em 0;
-    }
-
-    input, textarea {
-        padding: 0.5em 2em 0.5em 0.5em;
     }
 
     textarea {
