@@ -281,14 +281,13 @@ form {
     text-transform: uppercase;
 }
 
-fieldset{
+fieldset {
     border: none;
     border-radius: 2px;
-    overflow: hidden;
 }
 
 p {
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 label {
@@ -529,6 +528,14 @@ textarea:focus::placeholder {
 
     .banner-logo {
         width: 5em;
+    }
+
+    .banner-text h1 {
+        margin-right: 2em;
+    }
+
+    .banner-text h2 {
+        margin-left: 8em;
     }
 
     .bubble-box span {
