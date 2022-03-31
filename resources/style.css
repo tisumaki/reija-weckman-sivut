@@ -18,7 +18,8 @@ body {
 }
 
 main {
-    padding: 5%;
+    padding: 3.5% 5% 0 5%;
+    padding-top: 3.5%;
 }
 
 section {
@@ -32,7 +33,7 @@ h2 {
     font-weight: 800;
 }
 
-.services-container, .facts-container {
+.services-container, .about-container {
     text-align: center;
     padding: 0 2em 3.5em 2em;
     margin-bottom: 5em;
@@ -98,11 +99,9 @@ nav a {
     letter-spacing: 1.5px;
 }
 
-.nav-logo {
-    width: 5.5em;
-    padding: 1em;
-    font-family: 'Bad Script', cursive;
-    color: white;
+.nav-logo img {
+    width: 4em;
+    padding-right: 1em;
 }
 
 .sticky {
@@ -116,6 +115,7 @@ nav a {
     padding: 1em 0;
     display: flex;
     justify-content: space-around;
+    display: none;
 }
 
 .banner-text {
@@ -152,7 +152,7 @@ nav a {
     height: 28em;
     width: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: left;
 }
 
 .square {
@@ -165,6 +165,10 @@ nav a {
 
 #first-pic {
     margin-bottom: 5%;
+}
+
+#intro {
+    background-color: white;
 }
 
 .intro-container, .bubble-container {
@@ -182,7 +186,7 @@ nav a {
     font-weight: normal;
 }
 
-.services-container h2, .facts-container h2 {
+.services-container h2, .about-container h2 {
     padding: 1em;
 }
 
@@ -227,7 +231,7 @@ li::before {
 }
 
 
-.services-container h2, .facts-container h2 {
+.services-container h2, .about-container h2 {
     font-size: 2.5em;
 }
 
@@ -321,6 +325,14 @@ textarea:focus::placeholder {
     color: transparent;
 }
 
+.footer-logo {
+    text-align: center;
+    padding: 4em;
+}
+
+.footer-logo img {
+    height: 8em;
+}
 
 .footer-links {
     margin-bottom: 2em;
@@ -346,10 +358,6 @@ textarea:focus::placeholder {
     button {
         font-size: 0.8em;
     }
-
-    .nav-logo {
-        width: 4.5em;
-    }
     
     .banner-logo {
         width: 8em;
@@ -369,6 +377,10 @@ textarea:focus::placeholder {
         object-position: 65%;
     }
 
+    #first-pic {
+        object-position: 15%;
+    }
+
     .square {
         width: 65%;
     }
@@ -378,7 +390,7 @@ textarea:focus::placeholder {
         font-size: 2em;
     }
 
-    .services-container, .facts-container {
+    .services-container, .about-container {
         padding: 0 2em 4.5em 2em;
     }
 
@@ -413,14 +425,14 @@ textarea:focus::placeholder {
         padding: 0.5em;
     }
 
-    .nav-logo {
-        width: 3.5em;
-        margin-right: 0.75em;
-    }
-
     .brand-image {
         height: 28em;
         margin-bottom: 1.5em;
+    }
+
+    #first-pic {
+        object-fit: contain;
+        height: 12em;
     }
 
     .intro-container {
@@ -432,7 +444,7 @@ textarea:focus::placeholder {
         font-size: 1.75em;
     }
 
-    .services-container, .facts-container {
+    .services-container, .about-container {
         margin-bottom: 1.5em;
     }
 
@@ -440,7 +452,7 @@ textarea:focus::placeholder {
         font-size: 4em !important;
     }
 
-    .services-container h2, .facts-container h2 {
+    .services-container h2, .about-container h2 {
         font-size: 2em;
     }
 
@@ -498,6 +510,10 @@ textarea:focus::placeholder {
         font-size: 0.65em;
     }
 
+    .nav-logo img {
+        width: 3em;
+    }
+
     .bubble-container {
         padding: 2.5em 0;
     }
@@ -525,6 +541,10 @@ textarea:focus::placeholder {
 
     textarea {
         width: fit-content;
+    }
+
+    .footer-logo img {
+        height: 6em;
     }
 
 }
