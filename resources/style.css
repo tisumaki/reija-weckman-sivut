@@ -456,10 +456,6 @@ textarea:focus::placeholder {
         font-size: 2em;
     }
 
-    .services-container h2 {
-        padding: 0 0 1em 0;
-    }
-
     ul {
         padding: 0 1em;
     }
