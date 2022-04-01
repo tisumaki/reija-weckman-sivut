@@ -40,7 +40,7 @@ h2 {
     line-height: 1.75;
 }
 
-.more {
+.more-services, .more-about {
     display: none;
 }
 
@@ -78,7 +78,7 @@ nav a:hover {
 .nav-container-fixed {
     background-color: #291405;
     width: 100%;
-    height: 4rem;
+    height: 3.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -331,7 +331,7 @@ textarea:focus::placeholder {
 }
 
 .footer-logo img {
-    height: 8em;
+    height: 10em;
 }
 
 .footer-links {
@@ -492,6 +492,10 @@ textarea:focus::placeholder {
         float: none;
     }
 
+    .footer-logo img {
+        height: 8em;
+    }
+
     #linked-in-img {
         width: 3em;
     }
@@ -538,11 +542,6 @@ textarea:focus::placeholder {
     textarea {
         width: fit-content;
     }
-
-    .footer-logo img {
-        height: 6em;
-    }
-
 }
 
 @media only screen and (max-device-width: 320px) {
