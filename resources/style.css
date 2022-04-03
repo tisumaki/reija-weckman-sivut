@@ -105,13 +105,10 @@ nav a {
     letter-spacing: 1.5px;
 }
 
-.nav-logo {
-    display: flex;
-}
-
 .nav-logo img {
     width: 3.75em;
     padding-right: 1em;
+    vertical-align: middle;
 }
 
 .sticky {
