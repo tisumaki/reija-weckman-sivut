@@ -435,7 +435,7 @@ textarea:focus::placeholder {
     }
 
     #first-pic {
-       content: url(./images/Mobile\ banner.png);
+       content: url(./images/Mobile\ banner2.png);
        object-fit: scale-down;
        height: 22em;
     }
