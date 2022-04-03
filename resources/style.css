@@ -99,6 +99,10 @@ nav a {
     letter-spacing: 1.5px;
 }
 
+.nav-logo {
+    display: inherit;
+}
+
 .nav-logo img {
     width: 3.75em;
     padding-right: 1em;
@@ -431,8 +435,9 @@ textarea:focus::placeholder {
     }
 
     #first-pic {
-        object-fit: contain;
-        height: 12em;
+       content: url(./images/Mobile\ banner.png);
+       object-fit: scale-down;
+       height: 22em;
     }
 
     .intro-container {
@@ -520,6 +525,10 @@ textarea:focus::placeholder {
 
     .nav-container-fixed {
         height: 2.5rem;
+    }
+
+    #first-pic {
+        height: 20em;
     }
 
     li::before {
