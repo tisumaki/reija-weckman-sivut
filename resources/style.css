@@ -106,7 +106,7 @@ nav a {
 }
 
 .nav-logo {
-    display: inherit;
+    display: flex;
 }
 
 .nav-logo img {
