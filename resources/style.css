@@ -330,6 +330,7 @@ textarea:focus::placeholder {
 #terms {
     text-transform: none;
     text-align: center;
+    margin: 1em 0;
 }
 
 #terms input {
