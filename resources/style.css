@@ -349,6 +349,10 @@ textarea:focus::placeholder {
     height: 15em;
 }
 
+#linked-in-img {
+    width: 3em;
+}
+
 .footer-links {
     margin-bottom: 2em;
     display: flex;
@@ -553,7 +557,7 @@ textarea:focus::placeholder {
     }
 
     #linked-in-img {
-        width: 3em;
+        width: 2em;
     }
 
     #proz-img {
@@ -637,10 +641,6 @@ textarea:focus::placeholder {
 
     input, textarea {
         padding: 0.5em 2em 0.5em 0.5em;
-    }
-
-    #linked-in-img {
-        width: 2.5em;
     }
 
     #proz-img {
