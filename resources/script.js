@@ -37,3 +37,21 @@ $(document).ready(function() {
         }
     })
 });
+
+function disableSubmit() {
+    document.getElementById("submit-btn").disabled = true;
+    document.getElementById("submit-btn").style.opacity = "0.75";
+   }
+  
+    function activateButton(element) {
+  
+        if(element.checked) {
+          document.getElementById("submit-btn").disabled = false;
+          document.getElementById("submit-btn").style.opacity = "1";
+         }
+         else  {
+          document.getElementById("submit-btn").disabled = true;
+          document.getElementById("submit-btn").style.opacity = "0.75";
+        }
+  
+    }

@@ -327,6 +327,15 @@ textarea:focus::placeholder {
     color: transparent;
 }
 
+#terms {
+    text-transform: none;
+    text-align: center;
+}
+
+#terms input {
+    margin: 0 1em 0 0;
+}
+
 .user-cannot-see {
     display: none;
 }
@@ -529,6 +538,10 @@ textarea:focus::placeholder {
     label {
         margin: 1em auto;
         width: auto;
+    }
+
+    #terms {
+        line-height: 1.5;
     }
 
     #submit-btn {

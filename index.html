@@ -15,7 +15,7 @@
 
     </head>
 
-    <body onload="document.body.style.opacity='1'">
+    <body onload="document.body.style.opacity='1', disableSubmit()">
 
         <nav>
             <div class="nav-container-fixed">
@@ -163,6 +163,12 @@
                             <label for="message">Message</label>
                             <textarea placeholder="Enter your message here" name="message" form="contact-form" required></textarea><br><br>
                         </p>
+
+                        <p id="terms">
+                            <input type="checkbox" id="terms" name="terms" onchange="activateButton(this)">I have read and agree to the <a href="terms.html">Terms and Conditions & Privacy policy</a> of this website.
+                            <br><br>
+                        </p>
+
                         <p>
                             <button id="submit-btn" type="submit">Send</button>
                         </p>
