@@ -12,27 +12,30 @@ $("document").ready(function($){
 
 $(document).ready(function() {
     $(".top").click(function() {
-        $(this).siblings(".more-services").toggle();
+        $(this).siblings(".more-services").slideToggle(400);
         if($(this).text()=='Read more'){
             $(this).text('Read less');
+            $(".more-services").css('display', '');
         } else {
             $(this).text('Read more');
             $('html,body').animate({
-                scrollTop: $("#services").offset().top},
+                scrollTop: $("#services").offset().top -50},
                 'fast');
         }
     })
 });
 
+
 $(document).ready(function() {
     $(".read").click(function() {
-        $(this).siblings(".more-about").toggle();
+        $(this).siblings(".more-about").slideToggle(400);
         if($(this).text()=='Read more'){
             $(this).text('Read less');
+            $(".more-about").css('display', '');
         } else {
             $(this).text('Read more');
             $('html,body').animate({
-                scrollTop: $("#about-me").offset().top},
+                scrollTop: $("#about-me").offset().top -50},
                 'fast');
         }
     })
